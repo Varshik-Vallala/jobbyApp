@@ -1,0 +1,21 @@
+.filters-container {
+  width: 30%;
+}
+
+.type-of-employment-container {
+  color: #fff;
+  border-top: 2px solid #64748b;
+  padding-top: 12px;
+  width: 75%;
+}
+.checkboxes-list {
+  list-style-type: none;
+  padding: 0;
+}
+.checkbox {
+  margin-bottom: 14px;
+}
+.input-label {
+  margin-left: 8px;
+  cursor: pointer;
+}
