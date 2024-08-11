@@ -1,8 +1,8 @@
 # FROM - Set Base Image
-FROM node:16 AS builder
+FROM node:14 AS builder
 
 # LABEL - add custom data, just some key values
-LABEL maintainer="Frontend API Maintainers"
+#LABEL maintainer="Frontend API Maintainers"
 
 
 # RUN - execute commands
@@ -17,6 +17,9 @@ COPY . .
 
 # RUN - build related commands
 RUN npm install
+
+RUN npm run format
+
 RUN npm run build
 
 # FROM - To Deploy
